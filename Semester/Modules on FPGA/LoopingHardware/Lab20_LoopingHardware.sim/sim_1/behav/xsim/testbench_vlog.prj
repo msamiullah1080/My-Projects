@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Lab1819_NestedSubroutine/Lab1819_NestedSubroutine.srcs/sources_1/new/PC.v" \
+"../../../../Lab20_LoopingHardware.srcs/sources_1/new/ROMLoop.v" \
+"../../../../Lab20_LoopingHardware.srcs/sources_1/new/TopTop.v" \
+"../../../../Lab20_LoopingHardware.srcs/sources_1/new/loop.v" \
+"../../../../Lab20_LoopingHardware.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

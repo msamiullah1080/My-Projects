@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jul  4 11:22:26 2023
+# Process ID: 5184
+# Current directory: C:/Users/DELL/full_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16688 C:\Users\DELL\full_adder\full_adder.xpr
+# Log file: C:/Users/DELL/full_adder/vivado.log
+# Journal file: C:/Users/DELL/full_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/DELL/full_adder/full_adder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Softwares/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:35 . Memory (MB): peak = 769.707 ; gain = 143.551
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  4 12:05:54 2023...

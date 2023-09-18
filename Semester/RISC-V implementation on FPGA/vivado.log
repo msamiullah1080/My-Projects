@@ -1,0 +1,711 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Sep 16 22:03:33 2023
+# Process ID: 8472
+# Current directory: C:/Users/DELL/Documents/Vivado projects/RISC_V Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15548 C:\Users\DELL\Documents\Vivado projects\RISC_V Project\RISC_V Project.xpr
+# Log file: C:/Users/DELL/Documents/Vivado projects/RISC_V Project/vivado.log
+# Journal file: C:/Users/DELL/Documents/Vivado projects/RISC_V Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/DELL/RISC_V Project' since last save.
+WARNING: [Project 1-312] File not found as 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Control_Unit.v'; using path 'C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Control_Unit.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Data_Memory.v'; using path 'C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Data_Memory.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Datapath_Unit.v'; using path 'C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Datapath_Unit.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/GPRs.v'; using path 'C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/GPRs.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/alu_control.v'; using path 'C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/alu_control.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Risc_32_bit.v'; using path 'C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Risc_32_bit.v' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/test_Risc_32_bit.v'; using path 'C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sim_1/new/test_Risc_32_bit.v' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:46 . Memory (MB): peak = 777.113 ; gain = 134.918
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/DELL/Downloads/aqdas riscv/Adder_Subtractor.v} {C:/Users/DELL/Downloads/aqdas riscv/Comparator.v} {C:/Users/DELL/Downloads/aqdas riscv/ALU.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Risc_32_bit.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Risc_32_bit.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Datapath_Unit.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Datapath_Unit.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Control_Unit.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Control_Unit.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/DELL/Downloads/aqdas riscv/ALU.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/DELL/Downloads/aqdas riscv/ALU.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v}}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v}}
+update_compile_order -fileset sim_1
+set_property top tb_original [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_original
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 840.980 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Core> not found while processing module instance <c1> [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 840.980 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v}}
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+INFO: [VRFC 10-311] analyzing module ShiftRight
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <ProgramCounter> not found while processing module instance <u0> [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:137]
+ERROR: [VRFC 10-2063] Module <Instruction_Memory> not found while processing module instance <u1> [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:138]
+ERROR: [VRFC 10-2063] Module <RegFile> not found while processing module instance <u3> [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:139]
+ERROR: [VRFC 10-2063] Module <ALU> not found while processing module instance <u4> [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:149]
+ERROR: [VRFC 10-2063] Module <DataMem> not found while processing module instance <u5> [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:152]
+ERROR: [VRFC 10-2063] Module <Comparator> not found while processing module instance <u6> [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:161]
+ERROR: [VRFC 10-2063] Module <InstrDecoder> not found while processing module instance <u7> [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:168]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {{C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/RegFile.v}}
+update_compile_order -fileset sim_1
+add_files -norecurse {{C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/DataMem.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ProgramCounter.v}}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/InstrDecoder.v}}
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+INFO: [VRFC 10-311] analyzing module ShiftRight
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/InstrDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_original
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port br_instruction [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:137]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port addr_sel [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:155]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.SLL
+Compiling module xil_defaultlib.ShiftRight
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.InstrDecoder
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.tb_original
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_original_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/DELL/Documents/Vivado -notrace
+couldn't read file "C:/Users/DELL/Documents/Vivado": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Sat Sep 16 22:21:52 2023...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 858.305 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_original_behav -key {Behavioral:sim_1:Functional:tb_original} -tclbatch {tb_original.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_original.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 858.305 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_original_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:33 . Memory (MB): peak = 858.305 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/InstrDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port br_instruction [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:137]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port addr_sel [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:155]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.SLL
+Compiling module xil_defaultlib.ShiftRight
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.InstrDecoder
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.tb_original
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_original_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_original_behav -key {Behavioral:sim_1:Functional:tb_original} -tclbatch {tb_original.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_original.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_original_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 860.219 ; gain = 0.723
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+INFO: [VRFC 10-311] analyzing module ShiftRight
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/GPRs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPRs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port br_instruction [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:137]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port addr_sel [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:155]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.SLL
+Compiling module xil_defaultlib.ShiftRight
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.InstrDecoder
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.tb_original
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_original_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 867.398 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_original_behav -key {Behavioral:sim_1:Functional:tb_original} -tclbatch {tb_original.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_original.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_original_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 867.398 ; gain = 0.000
+update_compile_order -fileset sim_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+INFO: [VRFC 10-311] analyzing module ShiftRight
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/GPRs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPRs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+WARNING: [VRFC 10-2845] overwriting previous definition of module SLL [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v:40]
+INFO: [VRFC 10-311] analyzing module ShiftRight
+WARNING: [VRFC 10-2845] overwriting previous definition of module ShiftRight [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v:79]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/InstrDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sim_1/new/test_Risc_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_Risc_32_bit
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port br_instruction [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:137]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port addr_sel [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:155]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.SLL
+Compiling module xil_defaultlib.ShiftRight
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.InstrDecoder
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.tb_original
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_original_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_original_behav -key {Behavioral:sim_1:Functional:tb_original} -tclbatch {tb_original.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_original.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_original_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 881.898 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+INFO: [VRFC 10-311] analyzing module ShiftRight
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/GPRs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPRs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+WARNING: [VRFC 10-2845] overwriting previous definition of module SLL [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v:40]
+INFO: [VRFC 10-311] analyzing module ShiftRight
+WARNING: [VRFC 10-2845] overwriting previous definition of module ShiftRight [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v:79]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/InstrDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sim_1/new/test_Risc_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_Risc_32_bit
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port out [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v:27]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port br_instruction [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:137]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port addr_sel [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:155]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.SLL
+Compiling module xil_defaultlib.ShiftRight
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.InstrDecoder
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.tb_original
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_original_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_original_behav -key {Behavioral:sim_1:Functional:tb_original} -tclbatch {tb_original.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_original.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_original_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 881.898 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+INFO: [VRFC 10-311] analyzing module ShiftRight
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/GPRs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPRs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+WARNING: [VRFC 10-2845] overwriting previous definition of module SLL [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v:40]
+INFO: [VRFC 10-311] analyzing module ShiftRight
+WARNING: [VRFC 10-2845] overwriting previous definition of module ShiftRight [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v:79]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/InstrDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sim_1/new/test_Risc_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_Risc_32_bit
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port out [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v:27]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port br_instruction [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:137]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port addr_sel [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:155]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.SLL
+Compiling module xil_defaultlib.ShiftRight
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.InstrDecoder
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.tb_original
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_original_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 881.898 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_original' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_original_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+INFO: [VRFC 10-311] analyzing module ShiftRight
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Downloads/aqdas riscv/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/GPRs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GPRs
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SLL
+WARNING: [VRFC 10-2845] overwriting previous definition of module SLL [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v:40]
+INFO: [VRFC 10-311] analyzing module ShiftRight
+WARNING: [VRFC 10-2845] overwriting previous definition of module ShiftRight [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Adder_Subtractor.v:79]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/InstrDecoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstrDecoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sim_1/new/tb_original.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/RISC_V Project/RISC_V Project.srcs/sim_1/new/test_Risc_32_bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_Risc_32_bit
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 3e059f2617a14f3983d694030ae91dd3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_original_behav xil_defaultlib.tb_original xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port br_instruction [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:137]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 8 for port addr_sel [C:/Users/DELL/Documents/Vivado projects/RISC_V Project/RISC_V Project.srcs/sources_1/new/Core.v:155]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ProgramCounter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.SLL
+Compiling module xil_defaultlib.ShiftRight
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.Comparator
+Compiling module xil_defaultlib.InstrDecoder
+Compiling module xil_defaultlib.Core
+Compiling module xil_defaultlib.tb_original
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_original_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 881.898 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 913.621 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 18 19:17:28 2023...

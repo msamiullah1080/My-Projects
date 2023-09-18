@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/full_adder/full_adder.srcs/sources_1/new/Four_bit_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Four_bit_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/lab10_adders/lab10_adders.srcs/sources_1/new/Top_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/lab10_adders/lab10_adders.srcs/sources_1/new/two_1_MUX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module two_1_MUX
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/lab10_adders/lab10_adders.srcs/sources_1/new/uniform_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uniform_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/lab10_adders/lab10_adders.srcs/sim_1/new/tb_uniadder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uniadder

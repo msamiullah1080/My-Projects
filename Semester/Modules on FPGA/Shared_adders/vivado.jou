@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 10 10:24:32 2023
+# Process ID: 17196
+# Current directory: C:/Users/DELL/Documents/Vivado projects/lab11_shared_adders
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2208 C:\Users\DELL\Documents\Vivado projects\lab11_shared_adders\lab11_shared_adders.xpr
+# Log file: C:/Users/DELL/Documents/Vivado projects/lab11_shared_adders/vivado.log
+# Journal file: C:/Users/DELL/Documents/Vivado projects/lab11_shared_adders\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/DELL/Documents/Vivado projects/lab11_shared_adders/lab11_shared_adders.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source test_adder.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source test_adder.tcl
+close_sim

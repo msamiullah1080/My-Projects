@@ -1,0 +1,63 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from datetime import datetime
+import serial
+import signal
+import sys
+
+# Open serial port
+ser = serial.Serial('COM3', 4800)
+
+# Create empty lists to store data
+times = []
+temperatures = []
+
+# Set up the plot
+plt.ion()  # Turn on interactive mode
+fig, ax = plt.subplots()
+line, = ax.plot(times, temperatures)
+ax.set_xlabel('Time')
+ax.set_ylabel('Temperature')
+ax.set_title('Real-time Temperature vs Time')
+ax.grid(True)
+
+# Function to handle interrupt signal
+def signal_handler(sig, frame):
+    char = input("\nEnter character to send to Atmega16a (h, l, or a): ")
+    print("Sending character to Atmega16a...")
+    # Send character to Atmega16a via serial port
+    ser.write(char.encode())
+    ser.flush()
+
+# Register interrupt signal handler
+signal.signal(signal.SIGINT, signal_handler)
+
+# Update the plot in real-time
+while True:
+    # Read data from serial port
+    data = ser.readline().decode().strip()  # Read a line from serial port and decode from bytes to string
+    x = float(data)
+
+    # Append current time and temperature to lists
+    current_time = datetime.now()
+    times.append(current_time)
+    temperatures.append(x)
+
+    # Limit the data points shown to a maximum of 100
+    if len(times) > 60:
+        times.pop(0)
+        temperatures.pop(0)
+
+    # Update the plot
+    line.set_xdata(times)
+    line.set_ydata(temperatures)
+    ax.relim()
+    ax.autoscale_view()
+
+    # Redraw the plot
+    plt.draw()
+    plt.pause(1)  # Pause to allow time for plot to update
+
+# Turn off interactive mode and close the plot
+plt.ioff()
+plt.close()

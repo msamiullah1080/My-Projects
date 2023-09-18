@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.srcs/sim_1/new/tb_mealy.v,1689598793,verilog,,,,tb_mealy,,,,,,,,
+C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.srcs/sim_1/new/traffic_tb.v,1689663609,verilog,,,,traffic_tb,,,,,,,,
+C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.srcs/sources_1/new/MealyMachine.v,1689613691,verilog,,C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.srcs/sim_1/new/tb_mealy.v,,MealyMachine,,,,,,,,
+C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.srcs/sources_1/new/MooreMachine.v,1689580480,verilog,,C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.srcs/sim_1/new/tb_mealy.v,,SequenceDetectorMealy,,,,,,,,
+C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.srcs/sources_1/new/TrafficControl.v,1689664520,verilog,,C:/Users/DELL/Documents/Vivado projects/lab14_SequenceDetector/lab14_SequenceDetector.srcs/sim_1/new/traffic_tb.v,,TrafficControl,,,,,,,,

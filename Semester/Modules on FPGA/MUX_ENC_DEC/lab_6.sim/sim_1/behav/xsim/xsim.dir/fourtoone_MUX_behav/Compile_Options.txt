@@ -1,0 +1,1 @@
+-wto "8e21fe7fea2b449c866dabb334f23d03" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "fourtoone_MUX_behav" "xil_defaultlib.fourtoone_MUX" "xil_defaultlib.glbl" -log "elaborate.log" 

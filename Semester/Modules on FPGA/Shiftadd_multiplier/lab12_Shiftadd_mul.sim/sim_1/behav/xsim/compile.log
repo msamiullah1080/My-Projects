@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/lab12_Shiftadd_mul/lab12_Shiftadd_mul.srcs/sources_1/new/ANDing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ANDing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/lab12_Shiftadd_mul/lab12_Shiftadd_mul.srcs/sources_1/new/ArrayMultiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ArrayMultiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/full_adder/full_adder.srcs/sources_1/new/Four_bit_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Four_bit_Adder
+WARNING: [VRFC 10-756] identifier N is used before its declaration [C:/Users/DELL/Documents/Vivado projects/full_adder/full_adder.srcs/sources_1/new/Four_bit_Adder.v:25]
+WARNING: [VRFC 10-756] identifier N is used before its declaration [C:/Users/DELL/Documents/Vivado projects/full_adder/full_adder.srcs/sources_1/new/Four_bit_Adder.v:26]
+WARNING: [VRFC 10-756] identifier N is used before its declaration [C:/Users/DELL/Documents/Vivado projects/full_adder/full_adder.srcs/sources_1/new/Four_bit_Adder.v:29]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/DELL/Documents/Vivado projects/lab12_Shiftadd_mul/lab12_Shiftadd_mul.srcs/sim_1/new/tb_mul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mul
+WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/DELL/Documents/Vivado projects/lab12_Shiftadd_mul/lab12_Shiftadd_mul.srcs/sim_1/new/tb_mul.v:55]

@@ -1,0 +1,18 @@
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+# Create the dataframe from the given data
+data = {'Temperature': [24.0, 22.5, 23.0, 24.6, 25.0, 25.0, 22.0, 23.6, 26.0, 25.5,
+                        32.0, 33.0, 34.6, 35.0, 31.0, 32.4, 33.5, 34.5, 35.0, 34.0],
+        'LM35 Readings': [19.0, 23.0, 23.0, 23.0, 24.0, 25.0, 21.0, 23.0, 25.0, 25.0,
+                          31.0, 33.0, 33.0, 35.0, 31.0, 32.0, 33.0, 34.0, 34.5, 34.0]}
+df = pd.DataFrame(data)
+
+# Create the linear regression model and fit it on the data
+X = df[['Temperature']]
+y = df['LM35 Readings']
+model = LinearRegression().fit(X, y)
+
+# Print the intercept and coefficients of the model
+print('Intercept: ', model.intercept_)
+print('Coefficient: ', model.coef_[0])

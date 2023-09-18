@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jul  5 12:10:28 2023
+# Process ID: 8488
+# Current directory: C:/Users/DELL/lab_6/lab_6.runs/synth_1
+# Command line: vivado.exe -log fourtoeight_dec.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fourtoeight_dec.tcl
+# Log file: C:/Users/DELL/lab_6/lab_6.runs/synth_1/fourtoeight_dec.vds
+# Journal file: C:/Users/DELL/lab_6/lab_6.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fourtoeight_dec.tcl -notrace
