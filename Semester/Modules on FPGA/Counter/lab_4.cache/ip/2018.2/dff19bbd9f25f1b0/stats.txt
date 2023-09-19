@@ -1,4 +1,0 @@
-NumberHits:0
-Timestamp: Tue Jul 04 05:09:05 UTC 2023
-VLNV: xilinx.com:ip:vio:3.0
-SynthRuntime: 80
