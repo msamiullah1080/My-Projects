@@ -27,5 +27,12 @@ The methodology for our smart parking system involves integrating license plate 
 
 The Colab notebook files are designed to be run on Google Colab for fast processing. The rest of the process is explained in the report.
 
+## Demo:
+
+The demo of the project is available on the following Google Drive link:
+
+[Project Demo](https://drive.google.com/file/d/1VCcxKJJRRikaF632ajOwWqZ60ERYM9qa/view?usp=sharing)
+
+
 
 Feel free to explore, contribute, and use this project for further research and development.
