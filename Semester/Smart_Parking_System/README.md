@@ -6,6 +6,11 @@ Inefficient parking systems contribute to urban congestion and inconvenience. Th
 
 ![Smart Parking System](https://github.com/msamiullah1080/My-Projects/assets/125732093/90e4b870-1a21-408a-92ce-0829641e51a0)
 
+For a detailed description of the project, including its objectives, implementation details, and outcomes, please refer to our following article:
+
+[Smart Parking Solution: AI-Driven Faculty/Student Differentiation and Real-Time Space Monitoring](https://medium.com/@zohaibirfan/smart-parking-solution-ai-driven-faculty-student-differentiation-and-real-time-space-monitoring-7d53a195673b)
+
+
 ## Methodology:
 
 The methodology for our smart parking system involves integrating license plate detection and ultrasonic sensor-based occupancy monitoring. After collecting and preprocessing datasets for compatibility, a pretrained deep learning model is fine-tuned to seamlessly integrate ultrasonic sensor data. The model's detection results are transmitted to the cloud, where an Arduino is coupled to receive instructions, facilitating real-time categorization of parking spaces. This integration links detected license plates to user profiles, distinguishing between faculty and student parking. The resulting prototype optimizes parking space utilization, providing a seamless and efficient parking experience through cloud-aided communication between the ML model and the Arduino-controlled system.
